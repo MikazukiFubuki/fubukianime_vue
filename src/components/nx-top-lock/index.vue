@@ -1,7 +1,7 @@
 <template>
   <span>
     <el-tooltip effect="dark" content="锁屏" placement="bottom">
-    <i class="icon-bofangqi-suoping" @click="handleLock"></i>
+      <img class="icon-bofangqi-suoping" src="../../icons/login/lock.png" @click="handleLock">
     </el-tooltip>
     <el-dialog title="设置锁屏密码" :visible.sync="box" width="30%" append-to-body>
       <el-form :model="form" ref="form" label-width="80px">

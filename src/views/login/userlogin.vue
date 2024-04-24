@@ -20,9 +20,9 @@
 
 <script>
 import { isvalidUsername } from '@/utils/validate'
-import { login } from '@/api/login'
+
 export default {
-  name: 'userlogin',
+  name: ' userlogin ',
   data() {
     const validateUsername = (rule, value, callback) => {
       if (!isvalidUsername(value)) {
