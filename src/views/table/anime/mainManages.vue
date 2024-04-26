@@ -1286,7 +1286,7 @@ background
 
     </el-dialog>
     <!-- 1.3.1、确定追更一集弹层 -->
-    <el-dialog title="确定追更一集" :visible.sync="dialogFormVisible4ChasingAPlayEdit">
+    <el-dialog title="确定追更一集" :visible.sync="dialogFormVisible4ChasingAPlayEdit" width="600px">
 
       <el-form
         ref="dataChasingAPlayEditForm"
@@ -1298,7 +1298,7 @@ background
 
         <el-row>
 
-          <el-col :span="6">
+          <el-col :span="12">
 
             <el-form-item label="已看集数" prop="episodes">
 

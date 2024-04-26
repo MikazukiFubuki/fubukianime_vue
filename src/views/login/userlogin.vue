@@ -86,7 +86,7 @@ export default {
         if (valid) {
           this.$store.dispatch('Login', this.loginForm).then(res => {
             // 登录成功，将用户信息存储在 Vuex 中
-            this.$router.push({ path: '/table/anime/mainManages' })
+            this.$router.push({ path: '/dashboard/dashboard' })
           })
         }
       })
