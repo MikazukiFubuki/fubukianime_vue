@@ -3660,7 +3660,11 @@ export default {
 
     // 1.2.3.1、查询全部动画名及其评分
     selectAnimeWithScore() {
-      getAnimeWithScore().then((res) => {
+      const param = {
+        name: '',
+        score: ''
+      }
+      getAnimeWithScore(param).then((res) => {
         this.dialogFormVisible4AnimeWithScore = true
         this.dataAnimeWithScoreList = res.data
       })
